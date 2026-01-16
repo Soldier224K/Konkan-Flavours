@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Konkan Flavors | Authentic Coastal Cuisine</title>
+    <style>
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+       
+        header {
+            background-color: #fff;
+            padding: 15px 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #d35400; /* Spice Orange */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+          
+        }
+
+        nav a:hover { color: #d35400; }
+
+        .cart-icon {
+            background: #d35400;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            
+        }
+
+       
+        .hero {
+            background:url("https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=2000") center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 { font-size: 48px; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 18px; max-width: 600px; opacity: 0.9; }
+
+     
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2.section-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 32px;
+            position: relative;
+        }
+        
+        
+
+     
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive Grid */
+            gap: 30px;
+        }
+
+        .food-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .food-card:hover { transform: translateY(-5px); }
+
+        .food-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .food-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .food-title {
+            font-size: 20px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .food-desc {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .price {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .add-btn {
+            background-color: #d35400;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .add-btn:hover { background-color: #a04000; }
+
+       
+        footer {
+            background: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">KonkanFlavors</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">Cart (0)</div>
+    </header>
+
+    <div class="hero">
+        <h1>Taste the Coast</h1>
+        <p>Authentic Malvani spices, fresh seafood, and traditional recipes delivered straight to your table.</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Our Special Menu</h2>
+
+        <div class="menu-grid">
+            
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1756741987051-a6a38f28838b?w=600" class="food-img" alt="Bangada Fry">
+                <div class="food-info">
+                    <h3 class="food-title">Bangada Rava Fry Thali</h3>
+                    <p class="food-desc">Fresh Kingfish/Mackerel marinated in Malvani masala, rava fried, served with Sol Kadhi and Bhakri.</p>
+                    <div class="card-footer">
+                        <span class="price">₹450</span>
+                        <button class="add-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="https://vrag.in/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-25-at-11.41.19-PM.jpeg" class="food-img" alt="Kombdi Vade">
+                <div class="food-info">
+                    <h3 class="food-title">Malvani Kombdi Vade</h3>
+                    <p class="food-desc">Traditional spicy chicken curry served with fluffy fried Vade puri and onions.</p>
+                    <div class="card-footer">
+                        <span class="price">₹380</span>
+                        <button class="add-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="https://static01.nyt.com/images/2025/08/13/multimedia/11FD-TANISREX-DT-Madhur-Jaffreys-Goan-Shrimp-Curry-vbpk/11FD-TANISREX-DT-Madhur-Jaffreys-Goan-Shrimp-Curry-vbpk-mediumSquareAt3X.jpg" class="food-img" alt="Prawns Curry">
+                <div class="food-info">
+                    <h3 class="food-title">Goan Prawns Curry</h3>
+                    <p class="food-desc">Medium prawns cooked in a tangy coconut milk gravy with mild spices.</p>
+                    <div class="card-footer">
+                        <span class="price">₹420</span>
+                        <button class="add-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Ukadiche_Modak_%28Rice%29.jpg/1200px-Ukadiche_Modak_%28Rice%29.jpg" class="food-img" alt="Modak">
+                <div class="food-info">
+                    <h3 class="food-title">Ukadiche Modak</h3>
+                    <p class="food-desc">Steamed rice flour dumplings filled with fresh coconut and jaggery. (4 pcs)</p>
+                    <div class="card-footer">
+                        <span class="price">₹200</span>
+                        <button class="add-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="https://www.supaintsonplates.com/wp-content/uploads/2019/08/1597228578710-1.jpg" class="food-img" alt="Sol Kadhi">
+                <div class="food-info">
+                    <h3 class="food-title">Sol Kadhi Glass</h3>
+                    <p class="food-desc">A refreshing digestive drink made from Kokum fruit and coconut milk.</p>
+                    <div class="card-footer">
+                        <span class="price">₹80</span>
+                        <button class="add-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="https://scontent.fbom2-2.fna.fbcdn.net/v/t51.75761-15/463432580_18019791011533907_7088800985239896850_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=DNBhkY0GUtYQ7kNvwELVX8d&_nc_oc=AdklkaanpF-cDcObs3oZbPgrUEL8j2w3-9cl8QFMPPmCDZajIJiUlKA7wG7UGIKOsC0&_nc_zt=23&_nc_ht=scontent.fbom2-2.fna&_nc_gid=oY5T8QQ8nUQZ4wEAIhQfOg&oh=00_AfqHYpG5YQbIQYUT9sN4mowAJuRSvT4JozRMYUzNzyeNCg&oe=69702734" class="food-img" alt="Veg Thali">
+                <div class="food-info">
+                    <h3 class="food-title">Konkan Veg Thali</h3>
+                    <p class="food-desc">Assorted vegetables, usal, chapati, rice, dal, and homemade pickle.</p>
+                    <div class="card-footer">
+                        <span class="price">₹250</span>
+                        <button class="add-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Konkan Flavors. Authentic Taste of Maharashtra.</p>
+        <p>Location: Ratnagiri, MH | Support: +91 123 456 7890</p>
+    </footer>
+
+</body>
+</html>
+
